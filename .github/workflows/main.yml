@@ -64,7 +64,6 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/kittygram_backend:latest
 
-# workflow для frontend
   frontend_tests:
     runs-on: ubuntu-latest
     steps:
