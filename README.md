@@ -1,26 +1,36 @@
-#  Как работать с репозиторием финального задания
+### Описание проекта kittygram_final
 
-## Что нужно сделать
+### Как запустить проект:
 
-Настроить запуск проекта Kittygram в контейнерах и CI/CD с помощью GitHub Actions
+`git clone git@github.com:SerVik888/kittygram_final.git` -> клонировать репозиторий
 
-## Как проверить работу с помощью автотестов
+`cd api_yamdb` -> перейти в репозиторий
 
-В корне репозитория создайте файл tests.yml со следующим содержимым:
-```yaml
-repo_owner: ваш_логин_на_гитхабе
-kittygram_domain: полная ссылка (https://доменное_имя) на ваш проект Kittygram
-taski_domain: полная ссылка (https://доменное_имя) на ваш проект Taski
-dockerhub_username: ваш_логин_на_докерхабе
-```
+* Если у вас Linux/macOS\
+    `python3 -m venv env` -> создать виртуальное окружение\
+    `source env/bin/activate` -> активировать виртуальное окружение\
+    `python3 -m pip install --upgrade pip` -> обновить установщик\
+    `pip install -r requirements.txt` -> установить зависимости из файла requirements.txt\
+    `python3 manage.py migrate` -> выполнить миграции\
+    `python3 manage.py createsuperuser` -> создать суперпользователя\
+    `python3 manage.py runserver` -> запустить проект
 
-Скопируйте содержимое файла `.github/workflows/main.yml` в файл `kittygram_workflow.yml` в корневой директории проекта.
+* Если у вас windows\
+    `python -m venv venv` -> создать виртуальное окружение\
+    `source venv/Scripts/activate` -> активировать виртуальное окружение\
+    `python -m pip install --upgrade pip` -> обновить установщик\
+    `pip install -r requirements.txt` -> установить зависимости из файла requirements.txt\
+    `python manage.py migrate` -> выполнить миграции\
+    `python manage.py createsuperuser` -> создать суперпользователя\
+    `python manage.py runserver` -> запустить проект
 
-Для локального запуска тестов создайте виртуальное окружение, установите в него зависимости из backend/requirements.txt и запустите в корневой директории проекта `pytest`.
+### Cписок используемых технологий
 
-## Чек-лист для проверки перед отправкой задания
+- Django
+- React
+- pytest
+- djangorestframework
+- Docker
 
-- Проект Taski доступен по доменному имени, указанному в `tests.yml`.
-- Проект Kittygram доступен по доменному имени, указанному в `tests.yml`.
-- Пуш в ветку main запускает тестирование и деплой Kittygram, а после успешного деплоя вам приходит сообщение в телеграм.
-- В корне проекта есть файл `kittygram_workflow.yml`.
+Автор:
+Сафонов Сергей https://github.com/SerVik888 [sergey_safonov86@inbox.ru](mailto:sergey_safonov86@inbox.ru)
