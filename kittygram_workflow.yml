@@ -167,7 +167,7 @@ jobs:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
         message: |
-          push сделал (github.actor)
-          сообщение коммита (github.event.commits[-1].message)
+          push сделал ${{ github.actor }}
+          сообщение коммита ${{ github.event.commits[0].message }}
           ссылка на коммит - https://github.com/${{ github.repository }}/commit/${{github.sha}}
           Деплой kittygram успешно выполнен!
