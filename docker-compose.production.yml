@@ -12,7 +12,6 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql/data
   backend:
-    # needs: db
     image: servik8888/kittygram_backend
     depends_on:
       - db
@@ -21,7 +20,6 @@ services:
       - static:/backend_static
       - media:/app/media
   frontend:
-    # needs: backend
     image: servik8888/kittygram_frontend
     depends_on:
       - backend
@@ -30,9 +28,6 @@ services:
     volumes:
       - static:/static
   gateway:
-    # needs: |
-    #   backend
-    #   frontend
     image: servik8888/kittygram_gateway
     depends_on:
       - backend
