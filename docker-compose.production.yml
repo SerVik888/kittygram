@@ -19,6 +19,7 @@ services:
       - static:/backend_static
       - media:/app/media
   frontend:
+    needs: backend
     image: servik8888/kittygram_frontend
     env_file: .env
     command: cp -r /app/build/. /static/
