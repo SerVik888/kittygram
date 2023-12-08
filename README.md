@@ -1,8 +1,8 @@
-![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
+![example workflow](https://github.com/SerVik888/kittygram_final/actions/workflows/main.yml/badge.svg)
 
-![example branch parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=main)
+![example branch parameter](https://github.com/SerVik888/kittygram_final/actions/workflows/main.yml/badge.svg?branch=main)
 
-![example event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
+![example event parameter](https://github.com/SerVik888/kittygram_final/actions/workflows/main.yml/badge.svg?event=push)
 
 ### Описание проекта kittygram_final
 Kittygram - Это сеть, где люди могут размещать фотографии и некоторые данные о своих питомцах. Здесь можно добавить, изменить или удалить данные о своих питомцах, но для этого нужно зарегистрироваться иначе данные доступны только для просмотра. Изменять данные чужих питомцев тоже нельзя, они доступны только для просмотра.
