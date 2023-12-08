@@ -12,6 +12,7 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql/data
   backend:
+    needs: db
     image: servik8888/kittygram_backend
     env_file: .env
     volumes:
@@ -24,6 +25,9 @@ services:
     volumes:
       - static:/static
   gateway:
+    needs: |
+      backend
+      frontend
     image: servik8888/kittygram_gateway
     env_file: .env
     ports:
