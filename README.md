@@ -1,6 +1,6 @@
 ![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 
-![example branch parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=feature-1)
+![example branch parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?branch=main)
 
 ![example event parameter](https://github.com/github/docs/actions/workflows/main.yml/badge.svg?event=push)
 
@@ -15,11 +15,18 @@ Kittygram - Это сеть, где люди могут размещать фо�
 - djangorestframework
 - Docker
 
-<!-- ### Как запустить проект:
-
+### Как запустить проект :
 `git clone git@github.com:SerVik888/kittygram_final.git` -> клонировать репозиторий
 
-`cd backend` -> перейти в репозиторий
+**При помощи docker**
+    Перед началом нужно установить и запустить Docker.
+
+    `docker compose up` -> запустить Docker Compose\
+    `docker compose stop` -> остановить Docker Compose\
+
+**Без docker**
+
+`cd backend` -> перейти в папку
 
 * Если у вас Linux/macOS\
     `python3 -m venv env` -> создать виртуальное окружение\
@@ -37,16 +44,16 @@ Kittygram - Это сеть, где люди могут размещать фо�
     `pip install -r requirements.txt` -> установить зависимости из файла requirements.txt\
     `python manage.py migrate` -> выполнить миграции\
     `python manage.py createsuperuser` -> создать суперпользователя\
-    `python manage.py runserver` -> запустить проект -->
+    `python manage.py runserver` -> запустить проект
 
 ### Как заполнить файл .env:
 В проекте есть файл .env.example заполните свой по аналогии.
 `
-POSTGRES_DB - название базы\
-POSTGRES_USER- пользователь базы\
-POSTGRES_PASSWORD - пароль к базе\
-DB_NAME - имя базы\
-DB_HOST - имя контейнера, где запущен сервер БД\
+POSTGRES_DB - название базы \
+POSTGRES_USER- пользователь базы \
+POSTGRES_PASSWORD - пароль к базе \
+DB_NAME - имя базы \
+DB_HOST - имя контейнера, где запущен сервер БД \
 DB_PORT - порт, по которому Django будет обращаться к базе данных
 `
 
