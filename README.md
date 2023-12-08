@@ -1,9 +1,17 @@
 ### Описание проекта kittygram_final
 Kittygram - Это сеть где люди могут размещать фотограффии и некоторые данные о своих питомцах. Здесь можно добавить, изменить или удалить данные о своих питомцах, но для этого нужно зарегистрироваться иначе данные доступны только для просмотра. Изменять данные чужих питомцев тоже нельзя, они доступны только для просмотра.
 
+### Cписок используемых технологий
+
+- Django
+- React
+- pytest
+- djangorestframework
+- Docker
+
 ### Как запустить проект:
 
-`git clone git@github.com:SerVik888/kittygram_final.git` -> клонировать репозиторий
+<!-- `git clone git@github.com:SerVik888/kittygram_final.git` -> клонировать репозиторий
 
 `cd api_yamdb` -> перейти в репозиторий
 
@@ -23,15 +31,18 @@ Kittygram - Это сеть где люди могут размещать фот
     `pip install -r requirements.txt` -> установить зависимости из файла requirements.txt\
     `python manage.py migrate` -> выполнить миграции\
     `python manage.py createsuperuser` -> создать суперпользователя\
-    `python manage.py runserver` -> запустить проект
+    `python manage.py runserver` -> запустить проект -->
 
-### Cписок используемых технологий
-
-- Django
-- React
-- pytest
-- djangorestframework
-- Docker
+### Как заполнить файл .env:
+В проекте есть файл .env.example заполните свой по аналогии.
+"""
+POSTGRES_DB=kittygram
+POSTGRES_USER=kittygram_user
+POSTGRES_PASSWORD=kittygram_password
+DB_NAME=kittygram
+DB_HOST=db
+DB_PORT=5432
+"""
 
 Автор:
 Сафонов Сергей https://github.com/SerVik888 [sergey_safonov86@inbox.ru](mailto:sergey_safonov86@inbox.ru)
