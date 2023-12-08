@@ -19,16 +19,16 @@ services:
       - static:/backend_static
       - media:/app/media
   frontend:
-    needs: backend
+    # needs: backend
     image: servik8888/kittygram_frontend
     env_file: .env
     command: cp -r /app/build/. /static/
     volumes:
       - static:/static
   gateway:
-    needs: |
-      backend
-      frontend
+    # needs: |
+    #   backend
+    #   frontend
     image: servik8888/kittygram_gateway
     env_file: .env
     ports:
