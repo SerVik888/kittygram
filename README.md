@@ -1,8 +1,6 @@
-![example workflow](https://github.com/SerVik888/kittygram_final/actions/workflows/main.yml/badge.svg)
+![branch parameter](https://github.com/SerVik888/kittygram_final/actions/workflows/main.yml/badge.svg?branch=main)
 
-![example branch parameter](https://github.com/SerVik888/kittygram_final/actions/workflows/main.yml/badge.svg?branch=main)
-
-![example event parameter](https://github.com/SerVik888/kittygram_final/actions/workflows/main.yml/badge.svg?event=push)
+![event parameter](https://github.com/SerVik888/kittygram_final/actions/workflows/main.yml/badge.svg?event=push)
 
 ### Описание проекта kittygram_final
 Kittygram - Это сеть, где люди могут размещать фотографии и некоторые данные о своих питомцах. Здесь можно добавить, изменить или удалить данные о своих питомцах, но для этого нужно зарегистрироваться иначе данные доступны только для просмотра. Изменять данные чужих питомцев тоже нельзя, они доступны только для просмотра.
@@ -21,10 +19,10 @@ Kittygram - Это сеть, где люди могут размещать фо�
 **При помощи docker**\
     Перед началом нужно установить и запустить Docker.
 
-    `docker compose up` -> запустить Docker Compose\
-    `docker compose stop` -> остановить Docker Compose\
+    `docker compose up` -> запустить Docker Compose
+    `docker compose stop` -> остановить Docker Compose
 
-**Без docker**\
+**Без docker**
 
 Запуск backend
 
@@ -56,7 +54,7 @@ Kittygram - Это сеть, где люди могут размещать фо�
 
 
 ### Как заполнить файл .env:
-В проекте есть файл .env.example заполните свой по аналогии.\
+В проекте есть файл .env.example заполните свой по аналогии.
 
 `POSTGRES_DB` - название базы\
 `POSTGRES_USER` - пользователь базы\
@@ -64,6 +62,7 @@ Kittygram - Это сеть, где люди могут размещать фо�
 `DB_NAME` - имя базы\
 `DB_HOST` - имя контейнера, где запущен сервер БД\
 `DB_PORT` - порт, по которому Django будет обращаться к базе данных
+`DB_SQLIGTH` - если эта переменная есть используется база sqlite если нет то postgres
 
 
 Автор:
