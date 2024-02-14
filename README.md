@@ -1,4 +1,4 @@
-# Проект kittygram
+# Проект Kittygram
 
 ![branch parameter](https://github.com/SerVik888/kittygram_final/actions/workflows/main.yml/badge.svg?branch=main)
 
