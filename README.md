@@ -12,7 +12,7 @@ Kittygram - Это сеть, где люди могут размещать фо�
 
 **При помощи docker**\
     Перед началом нужно установить и запустить Docker.\
-    `docker-compose up` -> запустить Docker Compose\
+    `docker compose up` -> запустить Docker Compose\
     Открыть новый терминал\
     `docker compose exec backend python manage.py collectstatic` -> cобрать статику Django\
     `docker compose exec backend cp -r /app/collected_static/. /backend_static/static/` -> копируем статику(backend) на volume\
@@ -25,8 +25,8 @@ Kittygram - Это сеть, где люди могут размещать фо�
 
 Дополнительные команды для работы:\
     `docker compose up --build` -> пересборка контейнеров\
-    `docker-compose stop` -> остановить Docker Compose\
-    `docker-compose down` -> остановить Docker Compose и удалить все контейнеры
+    `docker compose stop` -> остановить Docker Compose\
+    `docker compose down` -> остановить Docker Compose и удалить все контейнеры
 
 **Без docker**\
 При запуске использовались следующие версии пакетов:
